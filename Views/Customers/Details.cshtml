@@ -1,0 +1,12 @@
+﻿@model web_asp.Models.Customer
+
+<h1>Customer Details</h1>
+
+<div>
+    <h2>@Model.FirstName @Model.LastName</h2>
+    <p>Email: @Model.Email</p>
+</div>
+
+<a href="@Url.Action("Edit", new { id = Model.Id })">Edit</a> |
+<a href="@Url.Action("Delete", new { id = Model.Id })">Delete</a> |
+<a href="@Url.Action("Index")">Back to List</a>
